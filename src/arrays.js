@@ -1,17 +1,23 @@
 //arrays de objectos
-const alunos = ['Roberto', 'Paula', 'Isaque'];
+const identificacao = [{
+    nome: "Roberto",
+    nota: 7,
+},
+{
+    nome: "Paula",
+    nota: 5
+},
+{
+    nome: "Isaque",
+    nota: 6
+},
+]
 
-const asNotas = [9, 5, 8]
-
-const alunos2 = alunos.map(function(itemAtual) {
+const identificacao2 = identificacao.map(function(itemAtual) {
     return{
-        nome: itemAtual,
-        notas: asNotas,
+        classifição: itemAtual,
     }
 })
-
-console.log(alunos2)
-
 
 //Função que irá retornar apenas os alunos que tiveram a nota maior ou igual à 6
 
@@ -29,4 +35,6 @@ function nota () {
 let resultado= nota()
 
 console.log(resultado)
+
+
 
